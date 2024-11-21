@@ -1,21 +1,15 @@
+@import url('../styles/theme.css');
+@import url('../styles/utils.css');
+@import url('../styles/grid.css');
+@import url('../styles/flex.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  @apply border-border;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-surface1 text-text1;
 }
